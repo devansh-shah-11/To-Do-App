@@ -17,4 +17,4 @@ To use this project, 1st clone the repo using the command gh repo clone devansh-
 Then open the index.html file in your browser and the todo application is ready to be used
 
 ## Authors
-- Devansh Shah - devansh-shah-11
+- Devansh Shah [@devansh-shah-11]
