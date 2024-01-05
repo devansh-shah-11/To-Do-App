@@ -33,3 +33,30 @@ ol{
 .hidden {
     display: none;
 }
+
+.deleteButton {
+    background-color: purple;
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.editButton {
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.updateButton {
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 16px;
+}
