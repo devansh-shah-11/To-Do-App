@@ -1,4 +1,4 @@
-function AddNewTask(){
+function addNewTask(){
 
     var task = document.getElementById("task").value;
     var ol = document.getElementById("MyTasks");
@@ -20,13 +20,12 @@ function AddNewTask(){
 
     var label = document.createElement("label");
     label.htmlFor = task;
-    label.appendChild(document.createTextNode(task));
+    label.textContent = task;
 
     li.appendChild(checkbox);
     li.appendChild(label);
     ol.appendChild(li);
     document.getElementById("task").value = "";
-
 }
 
 function displayTasks(tab) {

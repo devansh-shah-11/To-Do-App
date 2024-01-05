@@ -1,0 +1,5 @@
+1) Edit option (Update button)
+2) Delete option
+3) Listing Index
+4) follow camel-casing
+5) add comments after every function / event listener etc
