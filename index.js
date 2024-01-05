@@ -1,15 +1,27 @@
-function addNewTask(){
+var taskIdCounter = 1; // Counter for dynamic task numbering
+
+function addNewTask() {
 
     var task = document.getElementById("task").value;
+
+    if (task === "") {
+        alert("Please enter a task.");
+        return;
+    }
+
     var ol = document.getElementById("MyTasks");
-    
+
     console.log('Adding task: ' + task);
 
     var li = document.createElement("li");
     var checkbox = document.createElement("input");
     checkbox.type = "checkbox";
 
-    checkbox.addEventListener('change', function() {
+    // Increment the taskIdCounter for dynamic task numbering
+    var taskId = 'task_' + taskIdCounter++;
+    checkbox.id = taskId;
+
+    checkbox.addEventListener('change', function () {
         if (this.checked) {
             li.classList.add('Completed');
         } else {
@@ -19,7 +31,7 @@ function addNewTask(){
     });
 
     var label = document.createElement("label");
-    label.htmlFor = task;
+    label.htmlFor = taskId; // Using the unique taskId for the label
     label.textContent = task;
 
     li.appendChild(checkbox);
@@ -34,15 +46,15 @@ function displayTasks(tab) {
 
     for (var i = 0; i < tasks.length; i++) {
         var task = tasks[i];
-
+        task.classList.add('hidden');
         if (tab === 'complete' && task.classList.contains('Completed')) {
-            task.style.display = 'block';
+            task.classList.remove('hidden');
         } else if (tab === 'active' && !task.classList.contains('Completed')) {
-            task.style.display = 'block';
+            task.classList.remove('hidden');
         } else if (tab === 'all') {
-            task.style.display = 'block';
+            task.classList.remove('hidden');
         } else {
-            task.style.display = 'none';
+            task.classList.add('hidden');
         }
     }
 }

@@ -29,3 +29,7 @@ ol{
     color:purple;
     text-align: left;
 }
+
+.hidden {
+    display: none;
+}
