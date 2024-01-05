@@ -1,0 +1,25 @@
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:Tomato;
+    text-align: center;
+    background-color: yellow;
+}
+
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.button {
+    background-color: #aa4904;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
